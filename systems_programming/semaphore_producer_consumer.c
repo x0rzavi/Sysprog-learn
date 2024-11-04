@@ -28,9 +28,7 @@ void producer() {
 
   // Item produced
   x++;
-  printf("\nProducer produces"
-         "item %d",
-         x);
+  printf("\nProducer produces item %d", x);
 
   // Increase mutex value by 1
   mutex++;
@@ -49,9 +47,7 @@ void consumer() {
   // Increase the number of empty
   // slots by 1
   empty++;
-  printf("\nConsumer consumes "
-         "item %d",
-         x);
+  printf("\nConsumer consumes item %d", x);
   x--;
 
   // Increase mutex value by 1
@@ -72,7 +68,7 @@ int main() {
 
   for (i = 1; i > 0; i++) {
 
-    printf("\nEnter your choice:");
+    printf("\nEnter your choice: ");
     scanf("%d", &n);
 
     // Switch Cases
