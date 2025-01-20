@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function prime() {
-  num=$i
+  num=$1 # 1st argument
   if [ $num -lt 2 ]; then
     echo "$num is not prime"
   else
@@ -17,4 +17,3 @@ function prime() {
 
 read -p "Enter a number: " num
 prime "$num"
-
